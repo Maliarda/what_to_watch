@@ -1,0 +1,17 @@
+[tool.isort]
+
+default_section = 'THIRDPARTY'
+known_first_party = 'what_to_watch'
+known_flask = 'flask'
+profile = 'black'
+line_length = 79
+sections = ['FUTURE', 'STDLIB', 'FLASK', 'THIRDPARTY', 'FIRSTPARTY', 'LOCALFOLDER']
+skip_glob = ['**migrations/*']
+
+
+
+[tool.black]
+
+line-length = 79
+extend-exclude = '''migrations/'''
+target-version = ['py310']
